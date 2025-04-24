@@ -1,0 +1,27 @@
+logging:
+  level:
+    org: DEBUG
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka
+
+
+build:
+  version: 2.0
+
+accounts:
+  message: "Welcome to Ts Bank's Account related developement APIs"
+  contactDetails:
+    name: Tushar Sood - Dev
+    email: "{cipher}c87aebb3e8fd69a076aa3f1d6c0fae3973d1422353ddbe2a1cafa8632194f8eebab5a15c7bbc17c677d1856576e3dde3"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 555-1235
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

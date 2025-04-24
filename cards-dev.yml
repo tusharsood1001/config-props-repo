@@ -1,0 +1,29 @@
+logging:
+  level:
+    org: DEBUG
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    url: jdbc:h2:mem:testdb
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka
+
+build:
+  version: 2.0
+
+cards:
+  message: "Welcome to Ts Bank's Cards related developement APIs"
+  contactDetails:
+    name: Tushar Sood - Dev
+    email: ts-dev@gmail.com
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 555-1235

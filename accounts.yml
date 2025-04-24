@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: accounts
+    version: 1.0.0
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    #   ddl-auto: create
+    show-sql: true
+
+build:
+  version: 3.0
+
+accounts:
+  message: "Welcome to Ts Bank's Account related APIs"
+  contactDetails:
+    name: Tushar Sood - devloper
+    email: ts@gmail.com
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 555-1235

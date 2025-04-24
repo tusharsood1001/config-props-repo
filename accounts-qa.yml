@@ -1,0 +1,25 @@
+## GOOD TO HAVE NOT REQUIRDE THROUGH AUTOMATICALLY CHECKED VIA SPRING
+spring:
+  config:
+    activate:
+      on-profile: qa
+
+logging:
+  level:
+    org: INFO
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka
+
+build:
+  version: 1.0
+
+accounts:
+  message: "Welcome to Ts Bank's Account related qa APIs"
+  contactDetails:
+    name: Tushar Sood - qa
+    email: ts-qa@gmail.com
+  onCallSupport:
+    - (555) 555-8787
+    - (555) 555-8989
