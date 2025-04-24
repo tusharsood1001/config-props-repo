@@ -11,7 +11,7 @@ build:
   version: 2.0
 
 accounts:
-  message: "Welcome to Ts Bank's Account related developement from real GIT APIs"
+  message: "Welcome to Ts Bank's Account related dev back from real GIT APIs"
   contactDetails:
     name: Tushar Sood - Dev
     email: "{cipher}c87aebb3e8fd69a076aa3f1d6c0fae3973d1422353ddbe2a1cafa8632194f8eebab5a15c7bbc17c677d1856576e3dde3"
