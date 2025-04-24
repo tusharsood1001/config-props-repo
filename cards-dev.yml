@@ -20,7 +20,7 @@ build:
   version: 2.0
 
 cards:
-  message: "Welcome to Ts Bank's Cards related developement APIs"
+  message: "Welcome to Ts Bank's Cards related dev back APIs"
   contactDetails:
     name: Tushar Sood - Dev
     email: ts-dev@gmail.com
