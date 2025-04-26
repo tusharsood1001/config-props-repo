@@ -17,6 +17,8 @@ info:
 
 spring:
   datasource:
+    # was not required on locallly but , needed when started inside a container
+    # spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect -> can specify this up its optional
     driver-class-name: com.mysql.cj.jdbc.Driver
   h2:
     console:
