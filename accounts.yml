@@ -16,14 +16,15 @@ info:
     version: 1.0.0
 
 spring:
-  datasource:
+  #datasource:
     # was not required on locallly but , needed when started inside a container
     # spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect -> can specify this up its optional
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    #driver-class-name: com.mysql.cj.jdbc.Driver
   h2:
     console:
       enabled: true  
   jpa:
+    #database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       # this props is not required when using in mem DBs like H2
       # when using non in mem DBs, this rops specifies, that all classes annotated with entity should be created.
