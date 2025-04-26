@@ -21,7 +21,7 @@ accounts:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3307/accountsdb
+    url: jdbc:mysql://localhost:3307/loansdb
     username: root
     password:
   rabbitmq:
