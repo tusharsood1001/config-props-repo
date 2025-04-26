@@ -20,6 +20,10 @@ spring:
     console:
       enabled: true  
   jpa:
+    hibernate:
+      # when using non in mem DBs, this rops specifies, that all classes annotated with entity should be created.
+      # default value is none, which expects that, table should already exists.
+      ddl-auto: update
     properties:
       hibernate:
         format_sql: true
