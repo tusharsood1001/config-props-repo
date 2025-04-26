@@ -24,7 +24,7 @@ spring:
     console:
       enabled: true  
   jpa:
-    #database-platform: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
       # this props is not required when using in mem DBs like H2
       # when using non in mem DBs, this rops specifies, that all classes annotated with entity should be created.
