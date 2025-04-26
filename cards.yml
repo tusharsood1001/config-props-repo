@@ -21,6 +21,7 @@ spring:
       enabled: true  
   jpa:
     hibernate:
+      # this props is not required when using in mem DBs like H2
       # when using non in mem DBs, this rops specifies, that all classes annotated with entity should be created.
       # default value is none, which expects that, table should already exists.
       ddl-auto: update
