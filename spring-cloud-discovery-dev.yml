@@ -4,5 +4,7 @@ logging:
 
 eureka:
   client:
+    # eureka server wont be fectching registry info of other services
     fetchRegistry: false
+    # dont register with yourself
     registerWithEureka: false
