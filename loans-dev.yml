@@ -2,6 +2,9 @@ logging:
   level:
     org: DEBUG
 eureka:
+  instance:
+    # register via IP, instead of hostnames
+    prefer-ip-address: true
   client:
     #fetch registry when BE dependent service call is needed
     fetchRegistry: true
