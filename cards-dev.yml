@@ -17,6 +17,10 @@ spring:
     
 eureka:
   client:
+    #fetch registry when BE dependent service call is needed
+    fetchRegistry: true
+    # auto register with Eureka
+    registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8070/eureka
 
