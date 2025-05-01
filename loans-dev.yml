@@ -3,6 +3,10 @@ logging:
     org: DEBUG
 eureka:
   client:
+    #fetch registry when BE dependent service call is needed
+    fetchRegistry: true
+    # auto register with Eureka, this also auto registers microservices, when eureka shuts down and then comes up
+    registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8070/eureka
 
