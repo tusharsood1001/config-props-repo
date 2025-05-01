@@ -4,7 +4,7 @@ logging:
 eureka:
   instance:
     # register via IP, instead of hostnames
-    preferIpAddress: true
+    prefer-ip-address: false
   client:
     serviceUrl:
       defaultZone: http://localhost:8070/eureka
