@@ -2,7 +2,7 @@ logging:
   level:
     org: DEBUG
 eureka:
-  #instance:
+  instance:
     # register via IP, instead of hostnames
     prefer-ip-address: true
     #hostname: localhost
