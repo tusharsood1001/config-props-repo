@@ -10,6 +10,9 @@ management:
     env:
       enabled: true
 
+endpoints:
+  shutdown:
+    enabled: true
 # these props would be available under actuator/info url
 info:
   app:
