@@ -1,0 +1,22 @@
+server:
+  port: 8072
+logging:
+  level:
+    org: DEBUG
+
+
+# set - management.info.env.enabled: true for adding custom props to actuator info    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"        
+  info:
+    env:
+      enabled: true
+
+# this will be added to http://localhost:8072/actuator/info
+info:
+  app:
+    name: "spring-cloud-gateway"
+    version: 1.0.0

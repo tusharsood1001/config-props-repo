@@ -1,0 +1,10 @@
+server:
+  port: 8070
+logging:
+  level:
+    org: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
