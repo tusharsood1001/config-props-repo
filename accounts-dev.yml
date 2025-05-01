@@ -2,6 +2,9 @@ logging:
   level:
     org: DEBUG
 eureka:
+  instance:
+    # register via IP, instead of hostnames
+    preferIpAddress: true
   client:
     serviceUrl:
       defaultZone: http://localhost:8070/eureka
