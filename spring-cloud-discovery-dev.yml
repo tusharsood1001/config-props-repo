@@ -1,3 +1,7 @@
+logging:
+  level:
+    org: DEBUG
+
 eureka:
   client:
     fetchRegistry: false
