@@ -5,6 +5,7 @@ eureka:
   instance:
     # register via IP, instead of hostnames
     prefer-ip-address: false
+    hostname: localhost
   client:
     serviceUrl:
       defaultZone: http://localhost:8070/eureka
