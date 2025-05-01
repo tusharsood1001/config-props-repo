@@ -10,9 +10,11 @@ management:
     env:
       enabled: true
 
+# these props would be available under actuator/info url
 info:
   app:
     name: accounts
+    description: TS Bank Accounts Application
     version: 1.0.0
 
 spring:
