@@ -4,7 +4,7 @@ logging:
 eureka:
   instance:
     # register via IP, instead of hostnames
-    prefer-ip-address: true
+    preferIpAddress: true
     #hostname: localhost
   client:
     #fetch registry when BE dependent service call is needed
