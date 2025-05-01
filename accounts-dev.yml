@@ -2,13 +2,13 @@ logging:
   level:
     org: DEBUG
 eureka:
-  instance:
+  #instance:
     # register via IP, instead of hostnames
-    prefer-ip-address: false
-    hostname: localhost
+    #prefer-ip-address: false
+    #hostname: localhost
   client:
-    fetchRegistry: true
-    registerWithEureka: true
+    #fetchRegistry: true
+    #registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8070/eureka
 
