@@ -20,3 +20,11 @@ info:
   app:
     name: "spring-cloud-gateway"
     version: 1.0.0
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
