@@ -32,4 +32,5 @@ spring:
       discovery:
         locator:
           enabled: true
-          #lowerCaseServiceId: false
+          # enable smaller case service ids ot be linked to actual service route.
+          lowerCaseServiceId: false
