@@ -24,6 +24,10 @@ info:
     version: 1.0.0
 
 spring:
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
   #datasource:
     # was not required on locallly but , needed when started inside a container
     # spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect -> can specify this up its optional
@@ -57,3 +61,12 @@ accounts:
   onCallSupport:
     - (555) 555-1234
     - (555) 555-1235
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        slidinngWindowSize: 10
+        permittedNoOfCallsInHalfOpenState: 2
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10000
