@@ -10,7 +10,12 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"        
+        include: "*"
+  endpoint:
+    gateway:
+      enabled: true
+  health:
+    showDetails: always
   info:
     env:
       enabled: true
