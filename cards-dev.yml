@@ -16,6 +16,9 @@ spring:
     password: root
     
 eureka:
+  instance:
+    # register via IP, instead of hostnames
+    preferIpAddress: true
   client:
     #fetch registry when BE dependent service call is needed
     fetchRegistry: true
