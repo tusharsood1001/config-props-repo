@@ -21,6 +21,6 @@ spring:
     gateway:
       httpclient:
         # mustr be specified in milliseconds
-        connectTimeout: 8000
+        connect-timeout: 8000
         # must be specified as a duration
-        responseTimeout: 5s
+        response-timeout: 5s
