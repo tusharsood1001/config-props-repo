@@ -20,5 +20,7 @@ spring:
   cloud:
     gateway:
       httpclient:
-        connectTimeout: 8s
+        # mustr be specified in milliseconds
+        connectTimeout: 8000
+        # must be specified as a duration
         responseTimeout: 5s
