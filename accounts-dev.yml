@@ -44,7 +44,7 @@ resilience4j:
     configs:
       getBuildInfo:
         maxAttempts: 5
-        waitDuration: 2s
+        waitDuration: 2000
         #enableExponentialBackoff: true
         #exponentialBackoffMultiplier: 2
   circuitbreaker:
