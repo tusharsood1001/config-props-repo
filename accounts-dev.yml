@@ -1,6 +1,7 @@
 logging:
   level:
     org: DEBUG
+
 eureka:
   instance:
     # register via IP, instead of hostnames
@@ -39,6 +40,13 @@ spring:
     password: guest
 
 resilience4j:
+  retry:
+    configs:
+      getBuildInfo:
+        maxAttempts: 3
+        waitDuration: 2s
+        #enableExponentialBackoff: true
+        #exponentialBackoffMultiplier: 2
   circuitbreaker:
     configs:
       default:
@@ -47,11 +55,5 @@ resilience4j:
         failureRateThreshold: 50
         waitDurationInOpenState: 10000
 
-resilience4j:
-  retry:
-    configs:
-      getBuildInfo:
-        maxAttempts: 3
-        waitDuration: 2s
-        #enableExponentialBackoff: true
-        #exponentialBackoffMultiplier: 2
+
+  
