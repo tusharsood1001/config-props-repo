@@ -23,7 +23,7 @@ info:
     description: TS Bank Accounts Application
     version: 1.0.0
 
-# these are needed when we need to integrate the circuit breaker patterns with feign clients
+# these are needed when we need to integrate the circuit breaker patterns with feign clients, need to test for bulkhead.
 spring:
   cloud:
     circuitbreaker:
