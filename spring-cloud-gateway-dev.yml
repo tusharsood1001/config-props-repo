@@ -23,4 +23,4 @@ spring:
         # mustr be specified in milliseconds
         connect-timeout: 8000
         # must be specified as a duration
-        response-timeout: 5s
+        response-timeout: 3s
