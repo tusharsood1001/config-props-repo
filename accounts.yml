@@ -23,6 +23,7 @@ info:
     description: TS Bank Accounts Application
     version: 1.0.0
 
+# these are needed when we need to integrate the circuit breaker patterns with feign clients
 spring:
   cloud:
     circuitbreaker:
@@ -33,7 +34,7 @@ spring:
       circuitbreaker:
         enabled: true
   #datasource:
-    # was not required on locallly but , needed when started inside a container
+    # was not required on locallly but , needed when started inside a container, ignore this comment.
     # spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect -> can specify this up its optional
     #driver-class-name: com.mysql.cj.jdbc.Driver
   h2:
