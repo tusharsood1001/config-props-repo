@@ -43,7 +43,7 @@ resilience4j:
   bulkhead:
     instances:
       getContactInfoV2:        
-        maxConcurrentCalls: 2
+        maxConcurrentCalls: 5
   ratelimiter:
     configs:
       default:
