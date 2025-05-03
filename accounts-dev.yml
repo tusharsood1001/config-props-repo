@@ -42,7 +42,7 @@ spring:
 resilience4j:
   retry:
     configs:
-      getBuildInfo:
+      default:
         maxAttempts: 5
         waitDuration: 2000
         #enableExponentialBackoff: true
