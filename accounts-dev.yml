@@ -1,6 +1,6 @@
 logging:
   level:
-    org: INFO
+    org: DEBUG
 
 eureka:
   instance:
