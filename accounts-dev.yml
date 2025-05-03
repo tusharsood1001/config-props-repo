@@ -40,6 +40,13 @@ spring:
     password: guest
 
 resilience4j:
+  ratelimiter:
+    configs:
+      default:
+        # maximum time to wait for new quota to arrive in case current quota has exahusted
+        timeoutDuration: 1000
+        limitRefreshPeriod: 5000
+        limitForPeriod: 2
   retry:
     instances:
       getBuildInfo:
