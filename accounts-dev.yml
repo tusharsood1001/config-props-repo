@@ -51,7 +51,7 @@ resilience4j:
   retry:
     configs:
       getBuildInfo:
-        maxRetryAttempts: 3
-        waitDuration: 2000
+        maxAttempts: 3
+        waitDuration: 2s
         #enableExponentialBackoff: true
         #exponentialBackoffMultiplier: 2
