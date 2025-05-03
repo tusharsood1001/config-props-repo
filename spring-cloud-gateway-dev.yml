@@ -23,4 +23,7 @@ spring:
         # mustr be specified in milliseconds
         connect-timeout: 8000
         # must be specified as a duration
-        response-timeout: 3s
+        #response-timeout: 3s
+        # incresed this latter to see effect to retry
+        response-timeout: 16s
+        
