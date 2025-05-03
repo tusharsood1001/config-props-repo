@@ -40,6 +40,13 @@ spring:
     password: guest
 
 resilience4j:
+  bulkhead:
+    instances:
+      getContactInfoV2:
+        baseConfig: default
+    configs:
+      default:
+        maxConcurrentCalls: 5
   ratelimiter:
     configs:
       default:
