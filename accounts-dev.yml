@@ -52,6 +52,8 @@ resilience4j:
         exponentialBackoffMultiplier: 2
         ignoreExceptions:
           - java.lang.NullPointerException
+        retryExceptions:
+          - java.util.concurrent.TimeoutException
   circuitbreaker:
     configs:
       default:
