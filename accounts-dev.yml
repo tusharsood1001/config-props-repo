@@ -42,11 +42,8 @@ spring:
 resilience4j:
   bulkhead:
     instances:
-      getContactInfoV2:
-        baseConfig: default
-    configs:
-      default:
-        maxConcurrentCalls: 5
+      getContactInfoV2:        
+        maxConcurrentCalls: 2
   ratelimiter:
     configs:
       default:
