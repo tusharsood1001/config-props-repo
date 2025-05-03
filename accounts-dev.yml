@@ -41,6 +41,9 @@ spring:
 
 resilience4j:
   retry:
+    instances:
+      getBuildInfo:
+        baseConfig: default
     configs:
       default:
         maxAttempts: 5
