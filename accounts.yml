@@ -25,6 +25,10 @@ info:
 
 spring:
   cloud:
+    circuitbreaker:
+      bulkhead:
+        resilience4j:
+          enabled: true
     openfeign:
       circuitbreaker:
         enabled: true
