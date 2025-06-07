@@ -19,6 +19,9 @@ management:
   info:
     env:
       enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 # this will be added to http://localhost:8072/actuator/info
 info:
