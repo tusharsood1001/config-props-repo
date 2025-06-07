@@ -13,6 +13,9 @@ management:
   info:
     env:
       enabled: true
+  metrics:
+    tags:
+      appplication: ${spring.application.name} 
 
 info:
   app:
