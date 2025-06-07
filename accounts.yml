@@ -15,6 +15,9 @@ management:
   info:
     env:
       enabled: true
+  metrics:
+    tags:
+      application: ${spring-application-name}
 
 # these props would be available under actuator/info url
 info:
