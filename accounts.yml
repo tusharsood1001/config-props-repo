@@ -15,6 +15,7 @@ management:
   info:
     env:
       enabled: true
+  # telling micrometer/promethus to group metrics related to accounts under application name. 
   metrics:
     tags:
       application: ${spring.application.name}
