@@ -48,6 +48,7 @@ resilience4j:
     configs:
       default:
         # maximum time to wait for new quota to arrive in case current quota has exahusted
+        # def 2 - If the rate limit has been reached, the next thread will wait up to 1 second to see if a permit becomes available
         timeoutDuration: 1000
         limitRefreshPeriod: 5000
         limitForPeriod: 2
