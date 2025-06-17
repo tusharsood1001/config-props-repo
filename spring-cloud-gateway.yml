@@ -1,9 +1,5 @@
 server:
   port: 8072
-logging:
-  level:
-    org: DEBUG
-
 
 # set - management.info.env.enabled: true for adding custom props to actuator info    
 management:
