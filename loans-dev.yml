@@ -1,6 +1,9 @@
 logging:
   level:
     org: DEBUG
+  pattern:
+    level: "[${spring.application.name},%X{trace_id},%X{span_id}]"
+    
 eureka:
   instance:
     # register via IP, instead of hostnames
