@@ -1,4 +1,4 @@
- logging:
+logging:
   level:
     org: DEBUG
   pattern:
