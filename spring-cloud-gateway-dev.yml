@@ -1,4 +1,4 @@
-logging:
+ logging:
   level:
     org: DEBUG
   pattern:
@@ -23,6 +23,11 @@ resilience4j:
         waitDurationInOpenState: 10000
 
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:7080/realms/master/protocol/openid-connect/certs
   cloud:
     gateway:
       httpclient:
