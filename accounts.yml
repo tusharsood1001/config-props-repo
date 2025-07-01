@@ -32,7 +32,9 @@ spring:
   cloud:
     stream:
       bindings:
+        #publisher
         sendCommunication-out-0:
+          #exchange name where message would be published
           destination: send-communication
     circuitbreaker:
       bulkhead:
