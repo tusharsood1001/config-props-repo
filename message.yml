@@ -1,2 +1,7 @@
 server:
   port: 9010
+
+spring:
+  cloud:
+    function:
+      defination: email|sms
