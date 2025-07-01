@@ -4,4 +4,4 @@ server:
 spring:
   cloud:
     function:
-      defination: email|sms
+      definition: email|sms
