@@ -9,7 +9,7 @@ spring:
       bindings:
         emailsms-in-0:
           destination: send-communication
-          group: ${spring-application-name}
+          group: ${spring.application.name}
   rabbitmq:
     host: localhost
     port: 5672
