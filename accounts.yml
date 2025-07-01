@@ -30,6 +30,10 @@ info:
 # these are needed when we need to integrate the circuit breaker patterns with feign clients, need to test for bulkhead.
 spring:
   cloud:
+    stream:
+      bindings:
+        sendCommunication-out-0:
+          destination: send-communication
     circuitbreaker:
       bulkhead:
         resilience4j:
