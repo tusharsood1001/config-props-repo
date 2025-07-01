@@ -32,10 +32,15 @@ spring:
   cloud:
     stream:
       bindings:
+        function:
+          definition: updateCommunication
         #publisher
         sendCommunication-out-0:
           #exchange name where message would be published
           destination: send-communication
+        updateCommunication-in-0:
+          destination: communication-sent
+          group: ${spring.application.name}
     circuitbreaker:
       bulkhead:
         resilience4j:
