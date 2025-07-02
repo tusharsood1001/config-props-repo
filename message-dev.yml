@@ -1,3 +1,9 @@
 logging:
   level:
     org: DEBUG
+eureka:
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl.defaultZone: http://localhost:8070/eureka
+    
