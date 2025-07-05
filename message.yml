@@ -31,10 +31,10 @@ spring:
         emailsms-in-0:
           destination: send-communication
           group: ${spring.application.name}
-          binder: kafka
+          #binder: kafka
         emailsms-out-0:
           destination: communication-sent
-          binder: kafka
+          #binder: kafka
       kafka:
         binder:
           brokers:
