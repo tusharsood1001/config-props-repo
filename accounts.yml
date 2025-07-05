@@ -31,6 +31,7 @@ info:
 spring:
   cloud:
     stream:
+      default-binder: kafka
       bindings:
         function:
           definition: updateCommunication
@@ -38,9 +39,11 @@ spring:
         sendCommunication-out-0:
           #exchange name where message would be published
           destination: send-communication
+          binder: kafka
         updateCommunication-in-0:
           destination: communication-sent
           group: ${spring.application.name}
+          binder: kafka
       kafka:
         binder:
           brokers:
