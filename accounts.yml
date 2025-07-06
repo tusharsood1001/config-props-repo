@@ -44,10 +44,10 @@ spring:
           destination: communication-sent
           group: ${spring.application.name}
           binder: kafka
-      #kafka:
-        #binder:
-          #brokers:
-           # - localhost:9092
+      kafka:
+        binder:
+          brokers:
+            - localhost:9092
     circuitbreaker:
       bulkhead:
         resilience4j:
